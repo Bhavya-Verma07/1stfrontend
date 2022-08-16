@@ -1,18 +1,26 @@
-import React from "react";
+import React,{useState} from "react";
 
-const home = () => {
+const Home = () => {
   console.log("hello from the above of return, it's js.");
-  let name;
-  let profileviews;
-  let impressions;
-  let position;
-  name = "Harry";
-  position="app developer"
-  profileviews = 77;
-  impressions = 88;
+  // first argument represents value , second argument is used to update the value 
+  // let name;
+  const [name, setname]=useState("Harry");
+  // let profileviews;
+  const [profileviews, setviews]=useState("95");
+  // let impressions;
+  const [impressions, setimpression]=useState("101");
+  // let position;
+  const [position, setposition]=useState("MERN Developer");
+  // name = "Harry";
+  // position="app developer"
+  // profileviews = 77;
+  // impressions = 88;
 
   const handleclick = () => {
-    console.log("hello from handleclick inside onclick");
+   setname("Jenny");
+   setviews("100");
+   setimpression("150");
+   setposition("Full stack Web Developer");
   };
   return (
     <>
@@ -26,7 +34,7 @@ const home = () => {
         }}
         className="btn btn-primary my-3"
       >
-        Click here
+        click here
       </button>
       {/* for variable set of values to be entered */}
       <br /><hr/>
@@ -40,10 +48,9 @@ const home = () => {
         }}
         className="btn btn-primary"
       >
-        click again
+        change details
       </button>
     </>
   );
 };
-
-export default home;
+export default Home;

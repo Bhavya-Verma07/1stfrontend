@@ -2,7 +2,7 @@ import React,{useState} from "react";
 
 const Home = () => {
   console.log("hello from the above of return, it's js.");
-  // first argument represents value , second argument is used to update the value 
+  // first argument represents value , second argument is used to update the value
   // let name;
   const [name, setname]=useState("Harry");
   // let profileviews;
@@ -38,7 +38,7 @@ const Home = () => {
       </button>
       {/* for variable set of values to be entered */}
       <br /><hr/>
-      <h1 style={{ backgroundColor: "green" }}>{name}</h1>
+      <h1 style={{ backgroundColor: "yellow" }}>{name}</h1>
       <p>{position}</p>
       <p>number of views on your profile:{profileviews}</p>
       <p>impressions on your profie:{impressions}</p>

@@ -1,15 +1,13 @@
-import React, { useState } from "react";
+import React, {useEffect,useState } from "react";
 const Tool = () => {
   const [counter, setcounter] = useState(0);
   const [step, setStep] = useState(0);
   const stepincreament = () => {
-    if(step===9)
-    {
-        alert("Congratulations, you have achieved the target.");
+    if (step === 9) {
+      alert("Congratulations, you have achieved the target.");
     }
-    if(step===10)
-    {
-       return alert("Target already achieved.")
+    if (step === 10) {
+      return alert("Target already achieved.");
     }
     setStep(step + 1);
   };
@@ -23,6 +21,10 @@ const Tool = () => {
   const handledecreament = () => {
     setcounter(counter - 1);
   };
+//useEffect is used for sideeffects
+  useEffect(() => {
+    console.log("steps changed!");
+  }, [step, counter]);
   return (
     <>
       <h1 style={{ color: "grey", textAlign: "center" }}>
@@ -65,7 +67,7 @@ const Tool = () => {
         Current Steps: <span style={{ color: "blue" }}>{step}</span>
       </h1>
       <h1 style={{ color: "grey", textAlign: "left" }}>
-     Steps Left: <span style={{ color: "blue" }}>{10-step}</span>
+        Steps Left: <span style={{ color: "blue" }}>{10 - step}</span>
       </h1>
       <div className="row" style={{ textAlign: "center" }}>
         <div className="col">

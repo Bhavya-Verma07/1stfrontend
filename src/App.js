@@ -1,31 +1,37 @@
-
-import React from 'react';
+import React from "react";
 // import Navbar from "./Component/navbar";
 // import Footer from "./Component/footer";
 // import Center from "./Component/center";
 // import Home from "./Component/home";
 // import Clock from "./Component/clock";
-// import Tool from "./Component/increDecrement";
+import Tool from "./Component/increDecrement";
 // import Timer from "./Component/stopwatch";
 // import Pass from "./Component/passwordGenerator";
-import Clock from './Component/clock';
+// import Clock from './Component/clock';
+// import Practice from "./Component/practiceProps";
 import "./App.css";
 
-const App= ()=>{
+const App = () => {
+  // const [title, settitle] = useState("joe");
+  // const alerts = () => {
+  //   alert("hello from the parent component");
+  // };
+
+
   return (
     <>
-    <div></div>
-    {/* <Navbar/>
-    <Center/>
-    <Footer/> */
+      {/* <Navbar/>
+        <Center/>
+    <Footer/>
     // <Home/>
-    <Clock/>
+    // <Clock/>
     // <Pass/>
-//  <Tool/>
-//  <Timer/>
-  }
-  </>
+ <Tool/>
+//  <Timer/> */}
+      {/* <Practice alerts={alerts} title={title} settitle={settitle} knowMore={knowMore}/> */}
+      <Tool/>
+    </>
   );
 };
 
-export default App;// syntax to export files in frontend
+export default App; // syntax to export files in frontend

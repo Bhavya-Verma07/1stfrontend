@@ -1,15 +1,18 @@
 import React from "react";
+import "./App.css";
+import Condition from "./Component/practiceCondition";
 // import Navbar from "./Component/navbar";
 // import Footer from "./Component/footer";
 // import Center from "./Component/center";
 // import Home from "./Component/home";
 // import Clock from "./Component/clock";
-import Tool from "./Component/increDecrement";
+// import Tool from "./Component/increDecrement";
 // import Timer from "./Component/stopwatch";
 // import Pass from "./Component/passwordGenerator";
 // import Clock from './Component/clock';
 // import Practice from "./Component/practiceProps";
-import "./App.css";
+// import Conditional from "./Component/conditional";
+
 
 const App = () => {
   // const [title, settitle] = useState("joe");
@@ -29,7 +32,9 @@ const App = () => {
  <Tool/>
 //  <Timer/> */}
       {/* <Practice alerts={alerts} title={title} settitle={settitle} knowMore={knowMore}/> */}
-      <Tool/>
+      {/* <Tool/> */}
+      {/* <Conditional/> */}
+      <Condition/>
     </>
   );
 };
